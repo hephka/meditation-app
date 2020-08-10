@@ -108,3 +108,15 @@ nav a {
 [id="relaxingback"] {
   background-image: url(img/pluie.jpg);
 }
+
+.avatar {
+  border-radius: 50%; 
+  max-width: 4.4rem;
+  margin: auto;
+  margin-bottom: 10px;
+
+}
+
+footer a {
+  text-decoration: none;
+}
