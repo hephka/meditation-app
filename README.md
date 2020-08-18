@@ -1,3 +1,3 @@
 # meditation-app
 
-meditation application
+-- TUTO -- https://www.youtube.com/watch?v=oMBXdZzYqEk&feature=youtu.be
