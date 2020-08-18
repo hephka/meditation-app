@@ -68,17 +68,24 @@ const app = () => {
     let elapsed = fakeDuration - currentTime;
     let seconds = Math.floor(elapsed % 60);
     let minutes = Math.floor(elapsed / 60);
+    if (seconds < 10) {
+        seconds = "0" + seconds
+    }
+    if (minutes < 10) {
+        minutes = "0" + minutes
+    }
     timeDisplay.textContent = `${minutes}:${seconds}`;
+
     let progress = outlineLength - (currentTime / fakeDuration) * outlineLength;
     outline.style.strokeDashoffset = progress;
 
     if (currentTime >= fakeDuration) {
-      song.pause();
-      song.currentTime = 0;
-      play.src = "./svg/play.svg";
-      video.pause();
+        song.pause();
+        song.currentTime = 0;
+        play.src = "./svg/play.svg";
+        video.pause();
     }
-  };
+};
 
   beachMode.addEventListener("click", function () {
     titleMode.textContent = "relaxingFront";
